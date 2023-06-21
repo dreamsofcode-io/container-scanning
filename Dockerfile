@@ -1,8 +1,8 @@
+FROM golang:1.20.3-alpine as builder
+
 LABEL org.opencontainers.image.source=https://github.com/dreamsofcode-io/container-scanning
 LABEL org.opencontainers.image.description="Docker scanning container image"
 LABEL org.opencontainers.image.licenses=MIT
-
-FROM golang:1.20.3-alpine as builder
 
 RUN mkdir /app
 
